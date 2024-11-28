@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="/keyton/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/keyton/favicon.svg" />
+<link rel="shortcut icon" href="/keyton/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/keyton/apple-touch-icon.png" />
+<link rel="manifest" href="/keyton/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Telegram Mini Apps Vanilla JS Sample App</title>
@@ -100,7 +105,7 @@
             text: 'Buy REAL'
         });
         Telegram.WebApp.MainButton.onClick(function () {
-            Telegram.WebApp.showAlert('Connect Wallet')
+            Telegram.WebApp.showAlert('<div id="root"></div>')
         });	
         Telegram.WebApp.MainButton.show();
 
@@ -110,7 +115,7 @@
                 title: 'Presale',
                 message: 'Buy REAL',
                 buttons: [
-                    {id: 'link', type: 'default', text: 'https://shahnameh-ton.w3spaces.com/presale/presale.html'},
+                    {id: 'link', type: 'default', text: '<button>https://shahnameh-ton.w3spaces.com/presale/presale.html</button>'},
                     {type: 'cancel'},
                 ]
             }, function(btn) {

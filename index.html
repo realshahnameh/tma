@@ -110,12 +110,12 @@
                 title: 'Title',
                 message: 'Some message',
                 buttons: [
-                    {id: 'link', type: 'default', text: 'Open ton.org'},
+                    {id: 'link', type: 'default', text: 'https://shahnameh-ton.w3spaces.com/presale/presale.html'},
                     {type: 'cancel'},
                 ]
             }, function(btn) {
                 if (btn === 'link') {
-                    Telegram.WebApp.openLink('https://ton.org/');
+                    Telegram.WebApp.openLink('https://shahnameh-ton.w3spaces.com/presale/presale.html');
                 }
             });
         };
